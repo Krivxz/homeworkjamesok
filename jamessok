@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 15px 5%;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: #19a65a;
+            margin: 5px 0 20px;
+        }
+
+        h2 {
+            margin: 5px 0 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .left {
+            width: 40%;
+        }
+
+        .right {
+            width: 60%;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            line-height: 1.5;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+
+        .media {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 5px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is my profile</h1>
+
+    <div class="container">
+
+        <div class="left">
+
+            <div class="section">
+                <p>This is my favorite foods:</p>
+
+                <ul>
+                    <li>Khmer food</li>
+                    <li>Kary</li>
+                    <li>Fish soup</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p>This is my favorite fruits:</p>
+
+                <ol>
+                    <li>Pine Apple</li>
+                    <li>Banana</li>
+                    <li>Apple</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <h2>My Pictures</h2>
+
+            <div class="media">
+                <img src="myphoto.jpg" alt="My Picture 1">
+                <img src="myphoto.webp" alt="My Picture 2">
+                <img src="myphotoo.webp" alt="My Picture 3">
+            </div>
+
+            <h2>My Video</h2>
+
+            <video controls>
+                <source src="kruprovot.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+        </div>
+
+    </div>
+
+    <h2>My Subject Scores</h2>
+
+    <table>
+        <tr>
+            <th><span class="highlight">Subject</span></th>
+            <th><span class="highlight">Score</span></th>
+            <th><span class="highlight">Grade</span></th>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>90</td>
+            <td>Grade C</td>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>80</td>
+            <td>Grade B</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>96</td>
+            <td>Grade A</td>
+        </tr>
+    </table>
+
+</body>
+</html>
